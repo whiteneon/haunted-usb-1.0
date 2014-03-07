@@ -175,7 +175,7 @@ static void timerPoll(void)
         if( ++timerCnt >= TimerDelay )	
 		{
 			TimerDelay = 2835 + rand();		/* 1/63s * 63 * 30 + 0...32767 */
-			//TimerDelay = 315; // DonP Test, 5 seconds constant 
+			TimerDelay = 315; // DonP Test, 5 seconds constant 
 
 			// DonP - ensure delay is overridden to ~1 second if this flag is set.
 			// Actually only if it's greater than 1 otherwise the next event AFTER
